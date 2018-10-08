@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "page/hello/hello"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#EECFA1",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "hello触发事件",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

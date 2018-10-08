@@ -1,0 +1,38 @@
+<template name="iconTemplate">
+  <view class="icon-view">
+    <icon type='{{type}}' size='{{size}}' color='{{color}}'></icon>
+  </view>
+</template>
+
+<template name="progress">
+  <view class="icon-view">
+    <progress percent='{{percent}}' color='{{color}}' active='{{active}}' show-info='{{show_info}}' stroke-width='{{stroke_width}}'></progress> 
+  </view>
+</template>
+
+<view>
+  <template is="iconTemplate" data="{{...icon}}"></template>
+</view>
+
+<view>
+  <template is="progress" data="{{...progress}}"></template>
+</view>
+
+
+
+
+<view>
+<view class="section tc">
+ <view >
+  <video class=‘video‘ src="{{src}}" autoplay danmu-btn enable-danmu   controls  danmu-list="{{danmuList}}" 
+bindplay=‘bindplay‘ bindpause=‘bindpause‘ bindended=‘bindend‘ bindtimeupdate="bindtimeupdate"
+  ></video>
+</view>
+
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view>
+</view>
